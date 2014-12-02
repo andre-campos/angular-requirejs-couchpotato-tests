@@ -1,0 +1,115 @@
+<header id="header"  class="animated fadeInDown" >
+
+    <div id="logo-group">
+        <span id="logo"> <img src="styles/img/logo.png" alt="SmartAdmin"> </span>
+    </div>
+
+    <span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">Ainda não tem uma conta?</span> <a
+           ui-sref="register" class="btn btn-primary">Criar conta</a> </span>
+
+</header>
+<div id="main" role="main"  class="animated fadeInDown" >
+
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+                <h1 class="txt-color-blue login-header-big">Sigraweb</h1>
+
+                <div class="hero">
+                    <div class="pull-left login-desc-box-l">
+                        <h4 class="paragraph-header">Gestão aduaneira sem complicações. Mantenha seus dados da nuvem e mantenha seu foco no que realmente importa: seus clientes.</h4>
+
+                        <div class="login-app-icons">
+
+                            <a href-void class="btn btn-primary">Descubra mais</a>
+                        </div>
+                    </div>
+                    <img src="styles/img/demo/iphoneview.png" class="pull-right display-image" alt style="width:210px">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5 class="about-heading">Sobre o Sigraweb</h5>
+
+                        <p>
+                            O Sigraweb é uma ferramenta online para o gerenciamento e acompanhamento de operações de comércio exterior envolvendo o SISCOMEX.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5 class="about-heading">Muito mais do que confecção de processos!</h5>
+
+                        <p>
+                            O Sigraweb controla tudo! Do pré-alerta ao registro. Do numerário ao faturamento e emissão de NFS-e.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                <div class="well no-padding">
+                    <form id="login-form" class="smart-form client-form"  data-smart-validate-form  ng-submit="submit()">
+                        <header>
+                            Sign In
+                        </header>
+                        <fieldset>
+                            <section>
+                                <label class="label">E-mail</label>
+                                <label class="input"> <i class="icon-append fa fa-user"></i>
+                                    <input type="email" name="email" ng-model="email"
+                                           data-smart-validate-input
+                                           data-required
+                                           data-email
+                                           data-message-required="Por favor, informe seu endereço de email"
+                                           data-message-email="Por favor, informe um endereço válido">
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i>
+                                        Por favor informe seu email</b></label>
+                            </section>
+                            <section>
+                                <label class="label">Senha</label>
+                                <label class="input"> <i class="icon-append fa fa-lock"></i>
+                                   <input type="password" name="password" ng-model="senha"
+                                          data-smart-validate-input
+                                          data-required
+                                          data-minlength="3"
+                                          data-maxnlength="20"
+                                          data-message="Por favor, digite sua senha">
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Informe sua senha</b> </label>
+
+                                <div class="note">
+                                    <a ui-sref="forgotPassword">Esqueceu a senha?</a>
+                                </div>
+                            </section>
+                            <section>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" checked ng-model="rememberMe">
+                                    <i></i>Lembrar de mim</label>
+                            </section>
+                        </fieldset>
+                        <footer>
+                            <button type="submit" class="btn btn-primary" ng-click="Submit">
+                                Entrar
+                            </button>
+                        </footer>
+                    </form>
+                    
+                </div>
+                <div class="alert alert-danger fade in" ng-show="erroLogin">
+                    <button class="close" data-dismiss="alert">
+                    </button>
+                    <i class="fa-fw fa fa-times"></i>
+                    <strong>Erro!</strong> {{erroLogin}}
+                </div>
+                <!-- <h5 class="text-center"> - Or sign in using -</h5>
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href-void class="btn btn-primary btn-circle"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href-void class="btn btn-info btn-circle"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href-void class="btn btn-warning btn-circle"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</div>
