@@ -7,4 +7,4 @@ To run the project, go into the grunt folder and type:
 
 grunt karma
 
-You shouldn't need to download any dependencies as the node modules are alread in this repository.
+You shouldn't need to download any dependencies as the node modules are already in this repository.

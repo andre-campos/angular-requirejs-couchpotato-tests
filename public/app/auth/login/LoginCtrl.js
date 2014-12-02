@@ -2,7 +2,7 @@ define(['auth/module'], function (module) {
 
     "use strict";
 
-    return module.registerController('LoginCtrl', function ($scope, $state, $http, UserService) {
+    module.registerController('LoginCtrl', function ($scope, $state, $http, UserService) {
 
         $scope.email = null;
         $scope.senha = null;
